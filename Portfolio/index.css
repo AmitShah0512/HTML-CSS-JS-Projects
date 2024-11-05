@@ -1,0 +1,231 @@
+* {
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+body {
+  color: aqua;
+  background-image: url("Itachi.jpg");
+  background-size: cover;
+}
+
+/* Default Theme (Itachi) */
+body.itachi-theme {
+  color: aqua;
+  background-image: url("Itachi.jpg");
+  background-size: cover;
+}
+
+/* Sasuke Theme */
+body.sasuke-theme {
+  color: yellow;
+  background-image: url("Sasuke.jpg");
+  background-size: cover;
+}
+
+header {
+  position: relative;
+  flex-wrap: wrap;
+  top: 130px;
+  font-size: 25px;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 570px;
+  margin-left: 570px;
+  animation: test 3s ease-in 0s infinite alternate;
+  transition: all 0.3s ease; /* Smooth transition */
+  color: aqua;
+  border-color: aqua;
+  box-shadow: 2px 3px 3px aqua;
+}
+
+footer {
+  position: relative;
+  flex-wrap: wrap;
+  bottom: 100px;
+  font-size: 25px;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 570px;
+  margin-left: 570px;
+  animation: DJ 0.25s 0s infinite;
+  transition: all 0.3s ease; /* Smooth transition */
+  color: aqua;
+  border-color: aqua;
+  box-shadow: 2px 3px 3px aqua;
+}
+
+a {
+  color: aqua;
+}
+
+main {
+  height: 500px;
+  margin-top: 70px;
+  display: flex;
+}
+
+.container {
+  height: 60px;
+  width: 60px;
+  padding: 10px;
+  margin: 25px;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  transition: all 0.3s ease; /* Smooth transition */
+  color: aqua;
+  border-color: aqua;
+  box-shadow: 2px 3px 3px aqua;
+}
+
+body.itachi-theme header,
+body.itachi-theme footer,
+body.itachi-theme .container {
+  color: aqua;
+  border-color: aqua;
+  box-shadow: 4px 8px 16px aqua;
+}
+
+body.sasuke-theme header,
+body.sasuke-theme footer,
+body.sasuke-theme .container {
+  color: yellow;
+  border-color: yellow;
+  box-shadow: 4px 8px 16px yellow;
+}
+
+/* Anchor styles */
+body.itachi-theme a {
+  color: aqua;
+}
+
+body.sasuke-theme a {
+  color: yellow;
+}
+
+#mode {
+  position: absolute;
+  padding: 10px;
+  box-direction: 2px;
+  margin: 10px;
+  top: 0px;
+  left: 0px;
+  background-color: black;
+  border-radius: 10%;
+  transition: all 0.3s ease; /* Smooth transition */
+  color: aqua;
+  border-color: aqua;
+  box-shadow: 2px 3px 3px aqua;
+}
+
+/* Mode Button Styles */
+body.itachi-theme #mode {
+  color: aqua;
+  border-color: aqua;
+  box-shadow: 2px 3px 3px aqua;
+}
+
+body.sasuke-theme #mode {
+  color: yellow;
+  border-color: yellow;
+  box-shadow: 2px 3px 3px yellow;
+}
+
+.box1:hover {
+  background-color: aqua;
+  color: red;
+  transition: all 1s ease-in 0.1s;
+}
+
+.box1:hover a {
+  color: red;
+}
+
+.box1:hover i {
+  color: red;
+}
+
+/* Box1 Class Toggle */
+body.itachi-theme .box1:hover {
+  background-color: aqua;
+  transition: all 1s ease-in 0.1s;
+}
+
+body.itachi-theme .box1:hover a {
+  color: red;
+}
+
+body.itachi-theme .box1:hover i {
+  color: red;
+}
+
+body.sasuke-theme .alt-box1:hover {
+  background-color: black;
+  transition: all 1s ease-in 0.1s;
+}
+
+body.sasuke-theme .alt-box1:hover a {
+  color: yellow;
+}
+
+body.sasuke-theme .alt-box1:hover i {
+  color: yellow;
+}
+
+@keyframes test {
+  from {
+    left: -70px;
+  }
+  to {
+    left: 70px;
+  }
+}
+
+#box2:hover {
+  transition: all 1s ease-in 0.1s;
+  transform: rotate(360deg);
+}
+
+#box3:hover {
+  transition: all 1s ease-in 0.1s;
+  transform: scale(1.5);
+}
+
+#box4:hover {
+  transition: all 1s ease-in 0.1s;
+  transform: translate(20px, 50px);
+}
+
+#box5:hover {
+  transform: skew(30deg);
+}
+
+@keyframes Bounce {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+
+#box6:hover {
+  animation: Bounce 0.5s ease-in 0s infinite alternate;
+}
+
+@keyframes DJ {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: rgb(78, 60, 60);
+  }
+}

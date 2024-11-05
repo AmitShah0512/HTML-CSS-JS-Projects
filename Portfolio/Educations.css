@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+    color: aqua;
+    background-image: url("Itachi.jpg");
+    background-size: cover;
+}
+
+/* Default Theme (Itachi) */
+body.itachi-theme {
+  color: aqua;
+  background-image: url("Itachi.jpg");
+  background-size: cover;
+}
+
+/* Sasuke Theme */
+body.sasuke-theme {
+  color: yellow;
+  background-image: url("Sasuke.jpg");
+  background-size: cover;
+}
+
+header {
+  position: relative;
+  top: 30px;
+  font-size: 35px;
+  border: 2px solid aqua;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 550px;
+  margin-right: 550px;
+  padding: 25px;
+  box-shadow: 4px 8px 16px aqua;
+  color: aqua;
+  border-color: aqua;
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.container {
+  border: 2px solid aqua;
+  font-size: 25px;
+  text-align: left;
+  margin-top: 70px;
+  margin-left: 300px;
+  margin-right: 300px;
+  border-radius: 20px;
+  padding-left: 120px;
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  box-shadow: 4px 8px 16px aqua;
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+#mode {
+  position: absolute;
+  padding: 10px;
+  box-direction: 2px;
+  margin: 10px;
+  top: 0px;
+  left: 0px;
+  background-color: black;
+  border-radius: 10%;
+  transition: all 0.3s ease; /* Smooth transition */
+  color: aqua;
+  border-color: aqua;
+  box-shadow: 2px 3px 3px aqua;
+}
+
+body.itachi-theme header,
+body.itachi-theme footer,
+body.itachi-theme .container {
+  color: aqua;
+  border-color: aqua;
+  box-shadow: 4px 8px 16px aqua;
+}
+
+body.sasuke-theme header,
+body.sasuke-theme footer,
+body.sasuke-theme .container {
+  color: yellow;
+  border-color: yellow;
+  box-shadow: 4px 8px 16px yellow;
+}
+
+/* Mode Button Styles */
+body.itachi-theme #mode {
+  color: aqua;
+  border-color: aqua;
+  box-shadow: 2px 3px 3px aqua;
+}
+
+body.sasuke-theme #mode {
+  color: yellow;
+  border-color: yellow;
+  box-shadow: 2px 3px 3px yellow;
+}

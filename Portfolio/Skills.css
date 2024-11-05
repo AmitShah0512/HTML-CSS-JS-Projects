@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  color: aqua;
+  align-items: center;
+}
+
+body {
+  background-image: url("Itachi.jpg");
+  background-size: cover;
+}
+
+/* Default Theme (Itachi) */
+body.itachi-theme {
+  color: aqua;
+  background-image: url("Itachi.jpg");
+  background-size: cover;
+}
+
+/* Sasuke Theme */
+body.sasuke-theme {
+  color: yellow;
+  background-image: url("Sasuke.jpg");
+  background-size: cover;
+}
+
+header {
+  height: 50px;
+  width: 500px;
+  position: relative;
+  font-size: 25px;
+  border: 2px solid aqua;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  top: 40px;
+  left: 520px;
+  box-shadow: 4px 8px 16px aqua;
+  box-shadow: 2px 3px 3px aqua;
+}
+
+.skills {
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+}
+
+#container {
+  position: relative;
+  height: 60px;
+  width: 60px;
+  padding: 10px;
+  margin: 10px;
+  left: 25px;
+  right: 25px;
+  top: 80px;
+  border: 2px solid aqua;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  box-shadow: 4px 8px 16px aqua;
+  box-shadow: 2px 3px 3px aqua;
+}
+
+#mode {
+  position: absolute;
+  padding: 10px;
+  box-direction: 2px;
+  margin: 10px;
+  top: 0px;
+  left: 0px;
+  background-color: black;
+  border-radius: 10%;
+  transition: all 0.3s ease; /* Smooth transition */
+  color: aqua;
+  border-color: aqua;
+  box-shadow: 2px 3px 3px aqua;
+  box-shadow: 2px 3px 3px aqua;
+}
+
+body.itachi-theme header,
+body.itachi-theme footer,
+body.itachi-theme .container {
+  color: aqua;
+  border-color: aqua;
+  box-shadow: 4px 8px 16px aqua;
+}
+
+body.sasuke-theme header,
+body.sasuke-theme footer,
+body.sasuke-theme #container {
+  color: yellow;
+  border-color: yellow;
+  box-shadow: 4px 8px 16px yellow;
+}
+
+/* Anchor styles */
+body.itachi-theme a {
+  color: aqua;
+}
+
+body.sasuke-theme a {
+  color: yellow;
+}
+
+/* <p> styles */
+
+body.itachi-theme p{
+  color: aqua;
+}
+
+body.sasuke-theme p{
+  color: yellow;
+}
+
+/* <i> styles */
+
+body.itachi-theme i{
+  color: aqua;
+}
+
+body.sasuke-theme i{
+  color: yellow;
+}
+
+/* <h1> styles */
+
+body.itachi-theme h1{
+  color: aqua;
+}
+
+body.sasuke-theme h1{
+  color: yellow;
+}
+
+/* Mode Button Styles */
+
+body.itachi-theme #mode {
+  color: aqua;
+  border-color: aqua;
+  box-shadow: 2px 3px 3px aqua;
+}
+
+body.sasuke-theme #mode {
+  color: yellow;
+  border-color: yellow;
+  box-shadow: 2px 3px 3px yellow;
+}
